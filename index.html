@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jalwa Game Login & Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    /* Top bar (browser address type look) */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+      background: #020617;
+      color: #f9fafb;
+      font-size: 14px;
+    }
+
+    .top-bar .close {
+      font-size: 22px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .top-bar .title-wrapper {
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .top-bar .title-main {
+      font-weight: 600;
+      display: block;
+    }
+
+    .top-bar .title-sub {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .top-bar .menu-dots {
+      margin-left: 8px;
+      font-size: 20px;
+    }
+
+    /* Header with logo */
+    header {
+      background: #020617;
+      padding: 16px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #22c55e;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    .hamburger {
+      width: 26px;
+      height: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      height: 3px;
+      border-radius: 999px;
+      background: #e5e7eb;
+    }
+
+    /* Content */
+    .container {
+      padding: 24px 16px 80px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    h1 span {
+      display: block;
+    }
+
+    .sub-heading {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .highlight {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 20px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-radius: 6px;
+      padding: 14px 12px;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 14px;
+    }
+
+    .btn-primary {
+      background: #020617;
+      color: #a7f3d0;
+      border: 3px solid #22c55e;
+    }
+
+    .btn-secondary {
+      background: #6ee7b7;
+      color: #020617;
+      border: 3px solid #6ee7b7;
+    }
+
+    .btn-primary:active,
+    .btn-secondary:active {
+      transform: scale(0.98);
+    }
+
+    p {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 10px;
+    }
+
+    /* Floating bottom banner */
+    .bottom-banner {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 14px 12px;
+      background: #020617;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 20;
+    }
+
+    .bottom-banner a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: #22c55e;
+      color: #020617;
+      box-shadow: 0 0 0 2px #22c55e;
+    }
+
+    .gift-icon {
+      font-size: 20px;
+      margin-right: 6px;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fake browser top bar -->
+  <div class="top-bar">
+    <div class="close">&times;</div>
+    <div class="title-wrapper">
+      <span class="title-main">Jalwa Game Login &amp; Register</span>
+      <span class="title-sub">jalwaagame.info</span>
+    </div>
+    <div class="menu-dots">⋮</div>
+  </div>
+
+  <!-- Header with logo + hamburger -->
+  <header>
+    <div class="logo">Jalwa<span>.Game</span></div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+    <h1>
+      <span>Jalwa Game Login &amp;</span>
+      <span>Register – Jalwa</span>
+      <span>Lottery Download</span>
+      <span>App ₹100 Invite</span>
+      <span>Bonus</span>
+    </h1>
+
+    <div class="highlight">FREE ₹100 JALWA BONUS</div>
+
+    <!-- Both buttons go to your referral link -->
+    <a
+      href="https://www.jalwagame.com/#/register?invitationCode=486688088948"
+      class="btn btn-primary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      FREE ₹100 JALWA BONUS
+    </a>
+
+    <a
+      href="https://www.jalwagame.com/#/register?invitationCode=486688088948"
+      class="btn btn-secondary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      CLICK TO SIGNUP FOR REWARDS
+    </a>
+
+    <p>
+      Online lottery and colour trading games are growing fast in India, and Jalwa Game is among the most
+      exciting platforms available. With an easy Jalwa Login process, secure deposits, instant withdrawals,
+      and a special ₹100 invite bonus for new players, Jalwa has become a popular choice for entertainment.
+    </p>
+    <p>
+      Whether you’re searching for lottery games, colour trading, or winning opportunities, Jalwa Game offers
+      a smooth and trusted experience for its users.
+    </p>
+  </main>
+
+  <!-- Bottom sticky CTA -->
+  <div class="bottom-banner">
+    <a
+      href="https://www.jalwagame.com/#/register?invitationCode=486688088948"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="gift-icon">🎁</span>
+      <span>Get Sign Up Bonus!</span>
+    </a>
+  </div>
+</body>
+</html>
